@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Simple Todolist</title>
+    <link rel="stylesheet" href="/styles/homepageStyle.css">
+    <script src="/backend/script.js"></script>
+</head>
+<body class="text-center" id="body">
+<div class="randomColorDiv">
+    <h1>I change my color</h1>
+</div>
+<button class="btn myBtn" onclick="rePaint()">Repainting the page</button>
+<hr>
+<div class="todoList">
+    <input id="myInput" type="text" placeholder="Add new task!">
+    <button onclick="addTodo()" class="btn btn-danger btn-sm">Add task...</button>
+
+    <ul id="myUL">
+        <li>Dummy value</li>
+    </ul>
+</div>
+</body>
+</html>

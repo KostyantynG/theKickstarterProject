@@ -1,0 +1,15 @@
+#body {
+    height: 100vh;
+    background: red;
+}
+
+.navbar-nav.navbar-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero {
+    padding-top: 10vh;
+}

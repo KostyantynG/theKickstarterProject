@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+:root {
+    --color1: #0083B0;
+    --color2: #00B4DB;
+    --color3: #005AA7;
+    --color4: #FFFDE4;
+}
+
+* {
+    /* Resetting inner padding */
+    padding: 0;
+    /* Resetting outer padding */
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    /* 100% of the active Viewport geometry height */
+    height: 100vh;
+    /* Setting background color and opacity */
+    background: rgba(187, 217, 206, 0.56);
+}
+
+.pageContainer {
+    height: 100vh;
+    background: whitesmoke;
+    /*Setting the Grid system as layout system for the Children elements of the page, which is Rows by default to each element
+*/
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.item {
+    font-family: 'Silkscreen', cursive;
+}
+
+.navBar {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+    background: linear-gradient(to right, var(--color1), var(--color2), transparent);
+}
+
+.footer {
+    grid-column: 1 / span 12;
+    grid-row: 12 / span 1;
+    background: linear-gradient(to right, var(--color1), var(--color2), transparent);
+}
+
+.topBar {
+    grid-column: 2 / span 10;
+    grid-row: 2 / span 1;
+    background: var(--color4);
+}
+
+.l-sPanel {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 10;
+    background: radial-gradient(at bottom, var(--color3), var(--color4), transparent);
+    background-size: 300%, 300%;
+}
+
+.r-sPanel {
+    grid-column: 12 / span 1;
+    grid-row: 2 / span 10;
+    background: radial-gradient(at top, var(--color3), var(--color4), transparent);
+    background-size: 300%, 300%;
+}
+
+.bodyPart {
+    grid-column: 2 / span 10;
+    grid-row: 3 / span 9;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.myUl {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    padding-right: 2vw;
+    list-style: none;
+}
